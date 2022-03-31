@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		.circle{
+			height: 50px;
+			width: 50px;
+			border-radius: 50px;
+			background: red;
+			position: absolute;
+			left: 0px;
+			top:  0px;
+			transition: 1s;
+		}
+	</style>
+</head>
+<body>
+	<div class="circle"></div>
+	<script type="text/javascript">
+		let div = document.querySelector(".circle")
+		let lol = function(){
+			let num = Math.random()
+			let nu = Math.random()
+			let bigNum = num * 1300
+			let top = nu * 600
+			let a = Math.round(bigNum)
+			let b = Math.round(top)
+			div.style.left = a + "px"
+			div.style.top = b + "px"
+		}
+		setInterval(lol, 1000)
+	</script>
+</body>
+</html>
